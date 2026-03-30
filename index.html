@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+const Tamil =parseInt(prompt("Enter Your Mark Value:"));
+const English =parseInt(prompt("Enter Your Mark Value:"));
+const Maths=parseInt(prompt("Enter Your Mark Value:"));
+const Science=parseInt(prompt("Enter Your Mark Value:"));
+const Sociel=parseInt(prompt("Enter Your Mark Value:"));
+
+console.log("mark is : "+Tamil)
+console.log("mark is : "+English)
+console.log("mark is : "+Maths)
+console.log("mark is : "+Science)
+console.log("mark is : "+Sociel)
+  let Total = (Tamil+English+Maths+Science+Sociel);
+  console.log("Total mark is :"+Total); 
+/*
+Total number of subject is = 5
+Average formula = (Total Mark/No of subject)
+*/
+  let average=(Total/5);
+//   Calculate the average in all subjects
+  console.log(average);
+  if(average >=90){
+    console.log("'A' Grade : My average score is :" +average)
+  }
+  else if(average >= 75 && average <90){
+    console.log("'B' Grade : My average score is :" +average)
+  }
+  else if(average >= 60 && average <75){
+    console.log("'c' Grade : My average score is :" +average)
+  }
+  else if(average >= 40 && average <60){
+    console.log("'D' Grade : My average score is :" +average)
+  }
+  else{
+    console.log("'Fail' Grade : My average score is :" +average)
+
+  }
+  
+
+    </script>
+</body>
+</html>
