@@ -28,18 +28,19 @@
     </div>
     </div>
     <script>  
-const Tamil =parseInt(prompt("Enter Your Mark Value:"));
-const English =parseInt(prompt("Enter Your Mark Value:"));
-const Maths=parseInt(prompt("Enter Your Mark Value:"));
-const Science=parseInt(prompt("Enter Your Mark Value:"));
-const Sociel=parseInt(prompt("Enter Your Mark Value:"));
+      const Tamil =parseInt(prompt("Enter Your Mark Value:"));
+      const English =parseInt(prompt("Enter Your Mark Value:"));
+      const Maths=parseInt(prompt("Enter Your Mark Value:"));
+      const Science=parseInt(prompt("Enter Your Mark Value:"));
+      const Social=parseInt(prompt("Enter Your Mark Value:"));
+if(Tamil<=100 && English<=100 && Maths<=100 && Science <=100 && Social<=100 ){
 
-console.log("mark in Tamil subject : "+Tamil)
-console.log("mark in English subject : "+English)
-console.log("mark in Maths subject : "+Maths)
-console.log("mark in Science subject : "+Science)
-console.log("mark in Sociel subject : "+Sociel)
-  let Total = (Tamil+English+Maths+Science+Sociel);
+console.log("mark in Tamil subject : "+Tamil);
+console.log("mark in English subject : "+English);
+console.log("mark in Maths subject : "+Maths);
+console.log("mark in Science subject : "+Science);
+console.log("mark in Sociel subject : "+Social);
+  let Total = (Tamil+English+Maths+Science+Social);
   console.log("Total mark is :"+Total); 
 /*
 Total number of subject is = 5
@@ -48,21 +49,25 @@ Average formula = (Total Mark/No of subject)
   let average=(Total/5);
 //   Calculate the average in all subjects
   console.log(average);
-  if(average >=90){
-    console.log("'A' Grade : My average score is :" +average)
+  if(average >=90 && average<=100){
+    console.log("'A' Grade : My average score is :" +average);
   }
   else if(average >= 75 && average <90){
-    console.log("'B' Grade : My average score is :" +average)
+    console.log("'B' Grade : My average score is :" +average);
   }
   else if(average >= 60 && average <75){
-    console.log("'c' Grade : My average score is :" +average)
+    console.log("'c' Grade : My average score is :" +average);
   }
   else if(average >= 40 && average <60){
-    console.log("'D' Grade : My average score is :" +average)
+    console.log("'D' Grade : My average score is :" +average);
   }
   else{
-    console.log("'Fail' Grade : My average score is :" +average)
+    console.log("'Fail' Grade : My average score is :" +average);
 
+  }
+  }
+  else{
+    console.log("enter the value graterthan 100 is not valid the the grade calculater form");
   }
   
 
